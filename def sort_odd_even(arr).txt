@@ -1,0 +1,7 @@
+def sort_odd_even(arr):
+    odd = sorted([num for num in arr if num % 2 != 0])
+    even = sorted([num for num in arr if num % 2 == 0], reverse=True)
+    return odd + even
+arr = [5, 8, 11, 8, 6, 2]
+print(sort_odd_even(arr))
+
